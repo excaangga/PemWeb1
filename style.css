@@ -1,3 +1,5 @@
+/* styling beranda */
+
 .row, .tombol {
     color: white;
 }
@@ -32,4 +34,24 @@
 
 .btn:hover{
     color: rgb(137, 137, 143);
+}
+
+/* styling tentang */
+
+.tentang-desc, .tentang-keunggulan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 30px;
+}
+
+
+.item-keunggulan ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.item-keunggulan ul li:not(:last-child){
+    margin-right: 50px;
 }
