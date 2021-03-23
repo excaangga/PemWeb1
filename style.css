@@ -1,0 +1,35 @@
+.row, .tombol {
+    color: white;
+}
+
+.tulisan, .tombol{
+    display: flex;
+    align-items: center;
+}
+
+
+.btn{
+    color: white;
+}
+
+.parallax{
+    background-image: url("image/parallax.png");
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.par-content{
+    padding-top: 170px;
+    margin-left: 100px;
+}
+
+.tombol button{
+    margin-right: 20px;
+}
+
+.btn:hover{
+    color: rgb(137, 137, 143);
+}
