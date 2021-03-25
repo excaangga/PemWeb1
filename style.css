@@ -63,3 +63,31 @@
 .wrapper-item h5{
     display: ;
 }
+
+input{
+    margin-top: 30px;
+}
+
+.produk{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.keterangan{
+    justify-content: space-between;
+    display: flex;
+}
+
+a.btn{
+    margin-top: 10px;
+}
+
+.produk {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.judul_produk {
+    margin-top: 50px;
+}
