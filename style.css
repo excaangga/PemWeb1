@@ -46,12 +46,20 @@
     margin: 50px 30px;
 }
 
-
-.item-keunggulan ul{
-    list-style-type: none;
+.wrapper-item{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(88, 88, 88);
+    max-width: 375px;
 }
 
-.item-keunggulan ul li:not(:last-child){
-    margin-right: 50px;
+.wrapper-item img{
+    max-height: 190px;
+}
+
+.wrapper-item h5{
+    display: ;
 }
