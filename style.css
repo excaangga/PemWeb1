@@ -1,3 +1,5 @@
+/* styling beranda */
+
 .row, .tombol {
     color: white;
 }
@@ -32,6 +34,34 @@
 
 .btn:hover{
     color: rgb(137, 137, 143);
+}
+
+/* styling tentang */
+
+.tentang-desc, .tentang-keunggulan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 30px;
+}
+
+.wrapper-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(88, 88, 88);
+    max-width: 375px;
+}
+
+.wrapper-item img{
+    max-height: 190px;
+}
+
+.wrapper-item h5{
+    display: ;
 }
 
 input{
