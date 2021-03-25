@@ -120,6 +120,12 @@ a.btn{
     margin-top: 50px;
 }
 
+@media (max-width: 767.98px) { 
+    .keterangan{
+        display: block;
+        text-align: center;
+    }
+ }
 
 /* styling footer */
 
