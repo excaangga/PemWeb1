@@ -125,6 +125,10 @@ a.btn{
         display: block;
         text-align: center;
     }
+    .card-body a{
+        display: flex;
+        flex-direction: column;
+    }
  }
 
 /* styling footer */

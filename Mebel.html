@@ -11,6 +11,34 @@
     <!-- Font awesome kit -->
     <script src="https://kit.fontawesome.com/425c94931e.js" crossorigin="anonymous"></script>
 
+    <!-- Script Smooth Scrolling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 70
+          }, 400, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
 
     <link rel="stylesheet" href="style.css">
     <title>Logo</title>
@@ -49,15 +77,17 @@
               </div>
           </div>          
           <div class="tombol" style="margin-top: 30px;">
-              <button type="button" class="btn btn-success" style="padding: 5px 30px;">Cari</button>
-              <button type="button" class="btn">Selengkapnya</button>
+              <a href="#produk-kami"><button type="button" class="btn btn-success" style="padding: 5px 30px;" onclick="">Cari</button></a>
+              <a href="Tentang.html"><button type="button" class="btn">Selengkapnya</button></a>
           </div>
       </div>
-
     </div>
 
+    <!-- div kosong agar smooth scrolling konsisten -->
+    <div id="produk-kami"></div>
+
     <div class="judul_produk d-flex justify-content-center">
-      <h2>Produk Kami</h2>
+      <h1 style="background-color: #18489A; color: white;">produk kami</h1>
   </div>
 
   <div class="container">
@@ -126,12 +156,28 @@
           <div class="card-body">
               <div class="keterangan">
                   <h5 class="card-title">Meja</h5>
-                  <p class="card-text text-end">100.000</p>
+                  <p class="card-text">100.000</p>
               </div>
             <a href="#" class="btn btn-primary">Beli Sekarang</a>
           </div>
       </div>
   </div>
+
+  <!-- pagination -->
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Sebelumnya</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Berikutnya</a>
+      </li>
+    </ul>
+  </nav>
 
   <!-- footer -->
 
