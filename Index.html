@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Font awesome kit -->
+    <script src="https://kit.fontawesome.com/425c94931e.js" crossorigin="anonymous"></script>
+
+    <!-- Script Smooth Scrolling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 70
+          }, 400, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Logo</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: #18489A;"><b>Logo</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Tentang.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="parallax">
+        <div class="col-sm-5 offset-sm-1">
+          <div class="tulisan">
+              <div class="row" style="margin-left: 0; margin-right: 0;">
+                      <h2 style="padding-left: 0; padding-right: 0;">
+                          Miliki semua produk
+                          Furnitur premium dari
+                          <b>logo</b> sekarang!
+                      </h2>
+              </div>
+          </div>          
+          <div class="tombol" style="margin-top: 30px;">
+              <a href="#produk-kami"><button type="button" class="btn btn-success" style="padding: 5px 30px;" onclick="">Cari</button></a>
+              <a href="Tentang.html"><button type="button" class="btn">Selengkapnya</button></a>
+          </div>
+      </div>
+    </div>
+
+    <!-- div kosong agar smooth scrolling konsisten -->
+    <div id="produk-kami"></div>
+
+    <div class="judul_produk d-flex justify-content-center">
+      <h1 style="background-color: #18489A; color: white;">produk kami</h1>
+  </div>
+
+  <div class="container">
+    <div class="form-group col-lg-3 offset-lg-9" style="min-width: 300px;">
+      <span class="fa fa-search form-control-icon"></span>
+      <input type="text" class="form-control" placeholder="Search">
+    </div> 
+  </div>
+
+    <div class="produk d-flex justify-content-around">
+      <div class="card" style="width: 18rem;">
+          <img src="image/meja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <div class="keterangan">
+                  <h5 class="card-title">Meja</h5>
+                  <p class="card-text">100.000</p>
+              </div>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+          <img src="image/meja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <div class="keterangan">
+                  <h5 class="card-title">Meja</h5>
+                  <p class="card-text">100.000</p>
+              </div>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+          <img src="image/meja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <div class="keterangan">
+                  <h5 class="card-title">Meja</h5>
+                  <p class="card-text">100.000</p>
+              </div>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="produk d-flex justify-content-around">
+      <div class="card" style="width: 18rem;">
+          <img src="image/meja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <div class="keterangan">
+                  <h5 class="card-title">Meja</h5>
+                  <p class="card-text">100.000</p>
+              </div>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+          <img src="image/meja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <div class="keterangan">
+                  <h5 class="card-title">Meja</h5>
+                  <p class="card-text">100.000</p>
+              </div>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+          <img src="image/meja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <div class="keterangan">
+                  <h5 class="card-title">Meja</h5>
+                  <p class="card-text">100.000</p>
+              </div>
+            <a href="#" class="btn btn-primary">Beli Sekarang</a>
+          </div>
+      </div>
+  </div>
+
+  <!-- pagination -->
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Sebelumnya</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Berikutnya</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- footer -->
+
+  <div class="container-fluid pb-0 mb-0 justify-content-center text-light" id="footer" style="background-color: #18489A;">
+    <footer>
+        <div class="row my-5 justify-content-center py-5 pb-10px mb-0">
+            <div class="col-11">
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                        <h3 class=" mb-md-0 mb-5 bold-text">Logo</h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                        <ul class="list-unstyled">
+                            <li><a href="Mebel.html" style="color: white; text-decoration: none;">Beranda</a></li>
+                            <li><a href="Tentang.html" style="color: white; text-decoration: none;">Tentang</a></li>
+                            <li><a href="Kontak.html" style="color: white; text-decoration: none;">Kontak</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4  bold-text mt-sm-0 mt-5"><b>ALAMAT</b></h6>
+                        <p class="mb-1">LOREM IPSUM, 123</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                        <p class="social  mb-0 pb-0 bold-text"> <span class="mx-2"><a href="https://www.facebook.com" style="color: white;"><i class="fa fa-facebook" aria-hidden="true"></i></a></span> <span class="mx-2"><a href="https://www.linkedin.com" style="color: white;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span> <span class="mx-2"><a href="https://www.instagram.com" style="color: white;"><i class="fa fa-instagram" aria-hidden="true"></i></a></span> </p><small class="rights"><span>&#174;</span> Logo, All Rights Reserved.</small>
+                    </div>
+                    <div class="col-xl-4 col-md-8 col-sm-8 col-auto order-1 align-self-end ">
+                        <h6 class="mt-55 mt-2  bold-text"><b>KONTAK</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> kontak@logo.com</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
