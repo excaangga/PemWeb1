@@ -90,6 +90,32 @@ body{
     max-height: 190px;
 }
 
+.kelompok{
+    text-align: center;
+    align-items: center;
+}
+
+.anggota{
+    display: flex;
+    padding-left: 220px;
+}
+
+.anggota1, .anggota2, .anggota3{
+    padding: 30px;
+}
+
+@media (max-width: 767.98px) { 
+    .anggota{
+        display: block;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .anggota1, .anggota2, .anggota3{
+        padding: 10px;
+    }
+ }
+
 /* punya abid */
 
 input{
